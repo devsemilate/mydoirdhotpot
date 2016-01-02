@@ -1,1 +1,1 @@
-My android applications is mix togerther in one app .
+My android applications is mixed togerther in one app .
