@@ -1,10 +1,8 @@
-package core.codersaigon.axe.core.main.view;
+package core.codersaigon.axe.main.view;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
@@ -14,8 +12,8 @@ import android.widget.TextView;
 import com.tinmegali.mvp.mvp.GenericMVPActivity;
 
 import core.codersaigon.axe.R;
-import core.codersaigon.axe.core.main.MVP_Main;
-import core.codersaigon.axe.core.main.presenter.MainPresenter;
+import core.codersaigon.axe.main.MVP_Main;
+import core.codersaigon.axe.main.presenter.MainPresenter;
 
 public class MainActivity extends GenericMVPActivity<MVP_Main.RequireViewOps,
         MVP_Main.ProvidedPresenterOps,

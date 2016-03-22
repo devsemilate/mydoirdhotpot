@@ -1,4 +1,4 @@
-package core.codersaigon.axe.core.main.view;
+package core.codersaigon.axe.main.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,8 +11,8 @@ import android.widget.TextView;
 import com.tinmegali.mvp.mvp.GenericMVPActivity;
 
 import core.codersaigon.axe.R;
-import core.codersaigon.axe.core.main.MVP_Main;
-import core.codersaigon.axe.core.main.presenter.MainPresenter;
+import core.codersaigon.axe.main.MVP_Main;
+import core.codersaigon.axe.main.presenter.MainPresenter;
 
 /**
  * Created by coder saigon on 22-Mar-16.

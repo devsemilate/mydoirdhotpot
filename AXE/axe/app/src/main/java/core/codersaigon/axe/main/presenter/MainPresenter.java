@@ -1,9 +1,9 @@
-package core.codersaigon.axe.core.main.presenter;
+package core.codersaigon.axe.main.presenter;
 
 import com.tinmegali.mvp.mvp.GenericPresenter;
 
-import core.codersaigon.axe.core.main.MVP_Main;
-import core.codersaigon.axe.core.main.model.MainModel;
+import core.codersaigon.axe.main.MVP_Main;
+import core.codersaigon.axe.main.model.MainModel;
 
 /**
  * Created by coder saigon on 22-Mar-16.

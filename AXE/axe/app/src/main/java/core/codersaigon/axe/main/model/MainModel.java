@@ -1,8 +1,8 @@
-package core.codersaigon.axe.core.main.model;
+package core.codersaigon.axe.main.model;
 
 import com.tinmegali.mvp.mvp.GenericModel;
 
-import core.codersaigon.axe.core.main.MVP_Main;
+import core.codersaigon.axe.main.MVP_Main;
 
 /**
  * Created by coder saigon on 22-Mar-16.

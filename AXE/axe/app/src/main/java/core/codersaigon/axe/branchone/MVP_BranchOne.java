@@ -1,4 +1,4 @@
-package core.codersaigon.axe.core.main;
+package core.codersaigon.axe.branchone;
 
 import com.tinmegali.mvp.mvp.ActivityView;
 import com.tinmegali.mvp.mvp.ModelOps;
@@ -7,16 +7,14 @@ import com.tinmegali.mvp.mvp.PresenterOps;
 /**
  * Created by coder saigon on 22-Mar-16.
  */
-
-public interface MVP_Main {
-
+public interface MVP_BranchOne {
     /*
-        required view method available to presenter
-        main - presenter to view
-     */
+    required view method available to presenter
+    main - presenter to view
+ */
     interface RequireViewOps extends ActivityView
     {
-        void updateCurrentCount(int currentCount);
+
     }
 
     /*
@@ -25,8 +23,7 @@ public interface MVP_Main {
      */
     interface  ProvidedPresenterOps extends PresenterOps<RequireViewOps>
     {
-        void getCurrentCount();
-        void clickToIncreaseCount();
+
     }
 
     /*
@@ -35,8 +32,7 @@ public interface MVP_Main {
     */
     interface  RequiredPresenterOps
     {
-        void onGetCurrentCount(int currentCount);
-        void onCountIncreased(int increasedCount);
+
     }
 
     /*
@@ -45,8 +41,6 @@ public interface MVP_Main {
     */
     interface ProvidedModelOps extends ModelOps<RequiredPresenterOps>
     {
-        void getCount();
-        void increaseCount();
-    }
 
+    }
 }
