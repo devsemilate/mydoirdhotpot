@@ -4,6 +4,11 @@ import com.tinmegali.mvp.mvp.ActivityView;
 import com.tinmegali.mvp.mvp.ModelOps;
 import com.tinmegali.mvp.mvp.PresenterOps;
 
+import java.util.List;
+
+import core.codersaigon.axe.main.model.Category;
+import core.codersaigon.axe.main.model.CategoryContent;
+
 /**
  * Created by coder saigon on 22-Mar-16.
  */
@@ -16,7 +21,8 @@ public interface MVP_Main {
      */
     interface RequireViewOps extends ActivityView
     {
-        void updateCurrentCount(int currentCount);
+        void updateCategories(List<Category> categories);
+        void onCategorySelected(List<CategoryContent> categoryContents);
     }
 
     /*
@@ -25,8 +31,8 @@ public interface MVP_Main {
      */
     interface  ProvidedPresenterOps extends PresenterOps<RequireViewOps>
     {
-        void getCurrentCount();
-        void clickToIncreaseCount();
+        void getCategories();
+        void selectCategory(String id);
     }
 
     /*
@@ -35,8 +41,8 @@ public interface MVP_Main {
     */
     interface  RequiredPresenterOps
     {
-        void onGetCurrentCount(int currentCount);
-        void onCountIncreased(int increasedCount);
+        void onGetCategoriesData(List<Category> categories);
+        void onGetCategoryContent(List<CategoryContent> categoryContents);
     }
 
     /*
@@ -45,8 +51,8 @@ public interface MVP_Main {
     */
     interface ProvidedModelOps extends ModelOps<RequiredPresenterOps>
     {
-        void getCount();
-        void increaseCount();
+        void getCategories();
+        void getCategoryContent(String id);
     }
 
 }

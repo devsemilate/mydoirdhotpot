@@ -2,7 +2,11 @@ package core.codersaigon.axe.main.presenter;
 
 import com.tinmegali.mvp.mvp.GenericPresenter;
 
+import java.util.List;
+
 import core.codersaigon.axe.main.MVP_Main;
+import core.codersaigon.axe.main.model.Category;
+import core.codersaigon.axe.main.model.CategoryContent;
 import core.codersaigon.axe.main.model.MainModel;
 
 /**
@@ -34,24 +38,27 @@ public class MainPresenter extends GenericPresenter<MVP_Main.RequiredPresenterOp
     }
 
     /* view required presenter*/
+
     @Override
-    public void getCurrentCount() {
-        this.getModel().getCount();
+    public void getCategories() {
+        this.getModel().getCategories();
     }
 
     @Override
-    public void clickToIncreaseCount() {
-        this.getModel().increaseCount();
+    public void selectCategory(String id) {
+        this.getModel().getCategoryContent(id);
     }
 
     /* presenter offer to model */
     @Override
-    public void onGetCurrentCount(int currentCount) {
-        this.getView().updateCurrentCount(currentCount);
+    public void onGetCategoriesData(List<Category> categories)
+    {
+        this.getView().updateCategories(categories);
     }
 
     @Override
-    public void onCountIncreased(int increasedCount) {
-        this.getView().updateCurrentCount(increasedCount);
+    public void onGetCategoryContent(List<CategoryContent> categoryContents)
+    {
+        this.getView().onCategorySelected(categoryContents);
     }
 }

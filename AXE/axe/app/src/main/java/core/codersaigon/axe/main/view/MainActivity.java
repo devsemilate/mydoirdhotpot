@@ -1,54 +1,69 @@
 package core.codersaigon.axe.main.view;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.AdapterView;
+import android.widget.ListView;
 
 import com.tinmegali.mvp.mvp.GenericMVPActivity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import core.codersaigon.axe.R;
 import core.codersaigon.axe.main.MVP_Main;
+import core.codersaigon.axe.main.MVP_NewsCollection;
+import core.codersaigon.axe.main.model.Category;
+import core.codersaigon.axe.main.model.CategoryContent;
+import core.codersaigon.axe.main.model.News;
 import core.codersaigon.axe.main.presenter.MainPresenter;
+import core.codersaigon.axe.main.view.adapter.NvDrawerItemListAdapter;
 
 public class MainActivity extends GenericMVPActivity<MVP_Main.RequireViewOps,
         MVP_Main.ProvidedPresenterOps,
         MainPresenter>
         implements
-        MVP_Main.RequireViewOps
+        MVP_Main.RequireViewOps,
+        MVP_NewsCollection.RequiredActivityOps
 {
 
-    TextView tvCount;
+    Toolbar toolbar;
+    DrawerLayout mDrawer;
+    ActionBarDrawerToggle drawerToggle;
+    ListView nvItemListView;
+    ArrayList<Category> categories = new ArrayList<>();
+    NvDrawerItemListAdapter navItemListAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.onCreate(MainPresenter.class, this);
+
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                increaseCount();
-            }
-        });
+        mDrawer = (DrawerLayout)findViewById(R.id.drawer_layout);
+        drawerToggle = new ActionBarDrawerToggle(this, mDrawer, R.string.drawer_open, R.string.drawer_close);
+        mDrawer.addDrawerListener(drawerToggle);
+        nvItemListView = (ListView) findViewById(R.id.nv_list);
+        setUpNavigationDrawerContent();
 
-        tvCount = (TextView)findViewById(R.id.tvCount);
-        tvCount.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                gotoSubMain();
-            }
-        });
-
-        getCurrentCount();
+        this.getPresenter().getCategories();
     }
 
     @Override
@@ -65,35 +80,104 @@ public class MainActivity extends GenericMVPActivity<MVP_Main.RequireViewOps,
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        switch (id) {
+            case android.R.id.home:
+                mDrawer.openDrawer(GravityCompat.START);
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    private void getCurrentCount()
-    {
-        this.getPresenter().getCurrentCount();
-    }
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
 
-    private void increaseCount()
-    {
-        this.getPresenter().clickToIncreaseCount();
-    }
-
-    private void gotoSubMain()
-    {
-        Intent i = new Intent(this, SubMainOneActivity.class);
-        i.putExtra("currentCount", 10);
-        startActivity(i);
+        drawerToggle.syncState();
     }
 
     @Override
-    public void updateCurrentCount(int currentCount) {
-        tvCount.setText(""+currentCount);
-//        Snackbar.make(view, "current count is : " + currentCount, Snackbar.LENGTH_LONG)
-//        .setAction("Action", null).show();
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        drawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    private void setUpNavigationDrawerContent()
+    {
+        navItemListAdapter = new NvDrawerItemListAdapter(this, categories);
+        nvItemListView.setAdapter(navItemListAdapter);
+        nvItemListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Log.d("test", "click on item : " + position);
+                setlectDrawerItem(position);
+            }
+        });
+        navItemListAdapter.notifyDataSetChanged();
+    }
+
+    private void setlectDrawerItem(int position)
+    {
+        navItemListAdapter.setCurrentSelectedPos(position);
+        this.getPresenter().selectCategory(categories.get(position).getId());
+    }
+
+    public void replaceCategoryContentFragment(List<CategoryContent> categoryContents)
+    {
+        int currentPosition = navItemListAdapter.getCurrentSelectedPos();
+        Fragment fragment = null;
+
+        switch (categories.get(currentPosition).getKind())
+        {
+            case NewsCollection:
+                try
+                {
+                    fragment = NewsCollectionFragment.newInstance(new ArrayList<CategoryContent>(categoryContents));
+                }
+                catch (Exception ex)
+                {
+                }
+                break;
+            case Other:
+                try
+                {
+                    fragment = OtherFragment.newInstance();
+                }
+                catch (Exception ex)
+                {
+                }
+                break;
+            default:
+                try
+                {
+                    fragment = NewsCollectionFragment.newInstance(new ArrayList<CategoryContent>(categoryContents));
+                }
+                catch (Exception ex)
+                {
+                }
+        }
+
+        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
+
+        mDrawer.closeDrawers();
+    }
+
+    @Override
+    public void updateCategories(List<Category> _categories) {
+        this.categories.clear();
+        this.categories.addAll(_categories);
+        navItemListAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public void onCategorySelected(List<CategoryContent> categoryContents) {
+        replaceCategoryContentFragment(categoryContents);
+    }
+
+    @Override
+    public void gotoNewsActivity(News news, View viewToShare) {
+
     }
 }
