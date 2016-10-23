@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-v21/inset_divider.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-v21/inset_divider.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-v21/unbound_ripple_light.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-v21/unbound_ripple_light.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-v21/ic_menu_search.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-v21/ic_menu_search.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-v21/ic_menu_moreoverflow.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-v21/ic_menu_moreoverflow.xml"
+    }
+]

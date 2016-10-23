@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_action_entries">
+		<item>@string/expand</item>
+		<item>@string/play</item>
+		<item>@string/enqueue</item>
+		<item>@string/last_used_action</item>
+		<item>@string/play_all</item>
+		<item>@string/enqueue_all</item>
+		<item>@string/play_or_enqueue</item>
+		<item>@string/enqueue_as_next</item>
+		<item>@string/do_nothing</item>
+	</string-array>
+    <string-array name="default_action_entry_values">
+		<item>6</item> <!-- expand           -->
+		<item>0</item> <!-- play             -->
+		<item>1</item> <!-- enqueue          -->
+		<item>2</item> <!-- last_action_used -->
+		<item>3</item> <!-- play_all         -->
+		<item>4</item> <!-- enqueue_all      -->
+		<item>7</item> <!-- play_or_enqueue  -->
+		<item>8</item> <!-- enqueue_as_next  -->
+		<item>5</item> <!-- do_nothing       -->
+	</string-array>
+    <string-array name="default_playlist_action_entries">
+		<item>@string/play</item>
+		<item>@string/enqueue</item>
+		<item>@string/last_used_action</item>
+		<item>@string/play_all</item>
+		<item>@string/enqueue_all</item>
+		<item>@string/play_or_enqueue</item>
+		<item>@string/enqueue_as_next</item>
+		<item>@string/do_nothing</item>
+	</string-array>
+    <string-array name="default_playlist_action_entry_values">
+		<item>0</item> <!-- play             -->
+		<item>1</item> <!-- enqueue          -->
+		<item>2</item> <!-- last_action_used -->
+		<item>3</item> <!-- play_all         -->
+		<item>4</item> <!-- enqueue_all      -->
+		<item>7</item> <!-- play_or_enqueue  -->
+		<item>8</item> <!-- enqueue_as_ next -->
+		<item>5</item> <!-- do_nothing       -->
+	</string-array>
+    <string-array name="display_mode_entries">
+		<item>@string/info_on_cover</item>
+		<item>@string/info_below_cover</item>
+		<item>@string/fixed_info</item>
+	</string-array>
+    <string-array name="entry_values">
+		<!-- Note: even if this was an integer-array, these would be converted
+		     to strings anyway.
+		     http://code.google.com/p/android/issues/detail?id=2096 -->
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>7</item>
+		<item>8</item>
+	</string-array>
+    <array name="letter_tile_colors">
+        <item>#DB4437</item>
+        <item>#E91E63</item>
+        <item>#9C27B0</item>
+        <item>#673AB7</item>
+        <item>#3F51B5</item>
+        <item>#4285F4</item>
+        <item>#039BE5</item>
+        <item>#0097A7</item>
+        <item>#009688</item>
+        <item>#0F9D58</item>
+        <item>#689F38</item>
+        <item>#EF6C00</item>
+        <item>#FF5722</item>
+        <item>#757575</item>
+    </array>
+    <string-array name="notification_action_entries">
+		<item>@string/open_main_activity</item>
+		<item>@string/open_mini_popup</item>
+		<item>@string/open_full_player</item>
+		<item>@string/skip_to_next_song</item>
+	</string-array>
+    <string-array name="notification_mode_entries">
+		<item>@string/never_show</item>
+		<item>@string/show_when_playing</item>
+		<item>@string/always_show</item>
+	</string-array>
+    <string-array name="swipe_action_entries">
+		<!-- This must match the order of swipe_action_values exactly -->
+		<item>@string/do_nothing</item>
+		<item>@string/open_library</item>
+		<item>@string/play_pause</item>
+		<item>@string/next_song</item>
+		<item>@string/previous_song</item>
+		<item>@string/next_album</item>
+		<item>@string/previous_album</item>
+		<item>@string/cycle_repeat_mode</item>
+		<item>@string/cycle_shuffle_mode</item>
+		<item>@string/preferences_action_enqueue_current_album</item>
+		<item>@string/preferences_action_enqueue_current_artist</item>
+		<item>@string/preferences_action_enqueue_current_genre</item>
+		<item>@string/preferences_action_clear_queue</item>
+		<item>@string/preferences_action_show_queue</item>
+		<item>@string/toggle_controls</item>
+		<item>@string/seek_10s_forward</item>
+		<item>@string/seek_10s_backward</item>
+	</string-array>
+    <string-array name="swipe_action_values">
+		<!-- This must match the order of swipe_action_entries exactly and
+		     contain only values from PlaybackActivity.Action enum. -->
+		<item>Nothing</item>
+		<item>Library</item>
+		<item>PlayPause</item>
+		<item>NextSong</item>
+		<item>PreviousSong</item>
+		<item>NextAlbum</item>
+		<item>PreviousAlbum</item>
+		<item>Repeat</item>
+		<item>Shuffle</item>
+		<item>EnqueueAlbum</item>
+		<item>EnqueueArtist</item>
+		<item>EnqueueGenre</item>
+		<item>ClearQueue</item>
+		<item>ShowQueue</item>
+		<item>ToggleControls</item>
+		<item>SeekForward</item>
+		<item>SeekBackward</item>
+	</string-array>
+    <attr format="color" name="controls_active"/>
+    <attr format="color" name="controls_normal"/>
+    <attr format="color" name="float_color"/>
+    <attr format="color" name="now_playing_marker"/>
+    <attr format="color" name="overlay_background_color"/>
+    <attr format="color" name="overlay_foreground_color"/>
+    <attr format="color" name="tabs_background"/>
+    <color name="tabs_active_indicator">@android:color/holo_blue_dark</color>
+    <declare-styleable name="DragSortListView"><attr format="dimension" name="collapsed_height"/><attr format="float" name="drag_scroll_start"/><attr format="float" name="max_drag_scroll_speed"/><attr format="color" name="float_background_color"/><attr name="remove_mode"><enum name="clickRemove" value="0"/><enum name="flingRemove" value="1"/></attr><attr format="boolean" name="track_drag_sort"/><attr format="float" name="float_alpha"/><attr format="float" name="slide_shuffle_speed"/><attr format="integer" name="remove_animation_duration"/><attr format="integer" name="drop_animation_duration"/><attr format="boolean" name="drag_enabled"/><attr format="boolean" name="sort_enabled"/><attr format="boolean" name="remove_enabled"/><attr name="drag_start_mode"><enum name="onDown" value="0"/><enum name="onMove" value="1"/><enum name="onLongPress" value="2"/></attr><attr format="integer" name="drag_handle_id"/><attr format="integer" name="fling_handle_id"/><attr format="integer" name="click_remove_id"/><attr format="boolean" name="use_default_controller"/></declare-styleable>
+    <declare-styleable name="SeekBarPreference"><attr format="integer" name="sbpMaxValue"/><attr format="integer" name="sbpSteps"/><attr format="float" name="sbpSummaryValueMultiplication"/><attr format="float" name="sbpSummaryValueAddition"/><attr format="string" name="sbpSummaryText"/><attr format="string" name="sbpSummaryFormat"/><attr format="string" name="sbpSummaryZeroText"/><attr format="string" name="sbpCheckBoxText"/><attr format="string" name="sbpCheckBoxKey"/></declare-styleable>
+    <declare-styleable name="SlidingViewPreferences"><attr format="integer" name="slider_handle_id"/><attr format="integer" name="slider_slave_id"/></declare-styleable>
+    <dimen name="cover_padding">0sp</dimen>
+    <dimen name="cover_padding_with_pmark">0sp</dimen>
+    <dimen name="cover_size">44sp</dimen>
+    <dimen name="pmark_size">4sp</dimen>
+    <dimen name="row_normal_height">44sp</dimen>
+    <dimen name="text_padding">3sp</dimen>
+    <plurals name="added_to_playlist">
+		<item quantity="one">1 track added to playlist %2$s.</item>
+		<item quantity="other">%1$d tracks added to playlist %2$s.</item>
+	</plurals>
+    <plurals name="deleted">
+		<item quantity="one">1 track deleted.</item>
+		<item quantity="other">%d tracks deleted.</item>
+	</plurals>
+    <plurals name="enqueued">
+		<item quantity="one">1 track enqueued.</item>
+		<item quantity="other">%d tracks enqueued.</item>
+	</plurals>
+    <plurals name="hours">
+		<item quantity="one">%d hour</item>
+		<item quantity="other">%d hours</item>
+	</plurals>
+    <plurals name="minutes">
+		<item quantity="one">%d minute</item>
+		<item quantity="other">%d minutes</item>
+	</plurals>
+    <plurals name="playing">
+		<item quantity="one">1 track playing.</item>
+		<item quantity="other">%d tracks playing.</item>
+	</plurals>
+    <plurals name="removed_from_playlist">
+		<item quantity="one">1 track removed from playlist %2$s.</item>
+		<item quantity="other">%1$d tracks removed from playlist %2$s.</item>
+	</plurals>
+    <plurals name="seconds">
+		<item quantity="one">%d second</item>
+		<item quantity="other">%d seconds</item>
+	</plurals>
+    <string name="_album">album</string>
+    <string name="_artist">artist</string>
+    <string name="_composer">composer</string>
+    <string name="_format">format</string>
+    <string name="_genre">genre</string>
+    <string name="_path">path</string>
+    <string name="_replaygain">rgain</string>
+    <string name="_title">title</string>
+    <string name="_track">track</string>
+    <string name="_year">year</string>
+    <string name="about">About</string>
+    <string name="accelerometer_shake">Accelerometer shake</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="add_to_playlist">Add to playlist…</string>
+    <string name="album_track">Album, track number</string>
+    <string name="albums">Albums</string>
+    <string name="all_songs">All tracks</string>
+    <string name="always_show">Always show</string>
+    <string name="app_name">Vanilla Music</string>
+    <string name="artist_album">Artist, album</string>
+    <string name="artist_album_title">Artist, album, title</string>
+    <string name="artist_album_track">Artist, album, track number</string>
+    <string name="artist_year">Artist, year</string>
+    <string name="artists">Artists</string>
+    <string name="audio">Audio</string>
+    <string name="autoplaylist_playcounts_disabled">Do not create an automatic playlist</string>
+    <string formatted="false" name="autoplaylist_playcounts_fmt">%s \'Top %.0f\' playlist</string>
+    <string formatted="false" name="autoplaylist_playcounts_name">Top %d</string>
+    <string name="autoplaylist_playcounts_summary">Automatically create a</string>
+    <string name="autoplaylist_playcounts_title">Automatic playlist creation</string>
+    <string name="button_start">Start Rescan</string>
+    <string name="choose_playlist_name">Choose playlist name</string>
+    <string name="close_notification">Close notification</string>
+    <string name="cover_art">Cover art</string>
+    <string name="cover_longpress_action_title">Cover long press action</string>
+    <string name="cover_on_lockscreen_summary">Display the artwork of the currently playing track on the lockscreen</string>
+    <string name="cover_on_lockscreen_title">Show artwork on lockscreen</string>
+    <string name="cover_press_action_title">Cover tap action</string>
+    <string name="coverloader_android_summary">Query Androids internal media database for album artwork</string>
+    <string name="coverloader_android_title">Load artwork from Android</string>
+    <string name="coverloader_shadow_summary">Try to load artwork from \'/sdcard/Music/.vanilla/ARTIST/ALBUM.jpg\'</string>
+    <string name="coverloader_shadow_title">Load artwork from hidden folder</string>
+    <string name="coverloader_vanilla_summary">Search for image files named cover.jpg, album.jpg or artwork.jpg and display them as album cover</string>
+    <string name="coverloader_vanilla_title">Load artwork from folder</string>
+    <string name="create">Create</string>
+    <string name="customize_filebrowser_start">Filebrowser starts at this directory</string>
+    <string name="customize_tab_order">Adjust the order and visibility of library tabs</string>
+    <string name="cycle_continuous_shuffling">Continuous shuffle</string>
+    <string name="cycle_continuous_shuffling_summary">\'Shuffle mode\' will play tracks in completely random order</string>
+    <string name="cycle_repeat_mode">Cycle repeat mode</string>
+    <string name="cycle_shuffle_mode">Cycle shuffle mode</string>
+    <string name="database_proc">Examined</string>
+    <string name="date_added">Date added</string>
+    <string name="db_error_failure">Encountered error reading media database, and might miss updated or deleted files or rescan up-to-date files.</string>
+    <string name="db_error_recovered">Encountered error reading media database, but recovered.</string>
+    <string name="db_error_retrying">Encountered error reading media database.  Retrying in 1 second...</string>
+    <string name="db_label">Will also check existing media database for updated or deleted files.</string>
+    <string name="default_action_title">Default action</string>
+    <string name="default_playlist_action_title">Default playlist action</string>
+    <string name="delete">Delete</string>
+    <string name="delete_file">Delete file \'%s\'?</string>
+    <string name="delete_file_failed">Failed to delete %s.</string>
+    <string name="delete_item">Delete \'%s\'?</string>
+    <string name="delete_playlist">Delete playlist %s?</string>
+    <string name="delete_proc">Removed reference to</string>
+    <string name="deleted_item">\'%s\' deleted.</string>
+    <string name="dequeue_rest">Dequeue rest</string>
+    <string name="disable_lockscreen_summary">Prevent the lockscreen from activating when in the library or playback screen</string>
+    <string name="disable_lockscreen_title">Disable lockscreen</string>
+    <string name="display_mode_title">Display mode</string>
+    <string name="do_nothing">Do nothing</string>
+    <string name="done">Done</string>
+    <string name="double_tap_summary">Double-tapping the 1x1 widget will open the player. Incurs a 400ms delay before the widget responds to actions.</string>
+    <string name="double_tap_title">Double tap widget</string>
+    <string name="edit">Edit</string>
+    <string name="empty_queue">No tracks selected. Pick some from the library or enter random mode by tapping this message.</string>
+    <string name="empty_the_queue">Empty queue</string>
+    <string name="enable_scroll_to_song_summary">Scroll to currently playing track/album/artist in library lists</string>
+    <string name="enable_scroll_to_song_title">Scroll to track title</string>
+    <string name="enable_shake_summary">Only active when music is playing. Does not work when screen is off on some devices.</string>
+    <string name="enable_shake_title">Enable accelerometer shake</string>
+    <string name="enqueue">Enqueue</string>
+    <string name="enqueue_all">Enqueue all</string>
+    <string name="enqueue_as_next">Play next</string>
+    <string name="enqueue_current_album">Enqueue album</string>
+    <string name="enqueue_current_artist">Enqueue artist</string>
+    <string name="enqueue_current_genre">Enqueue genre</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="expand">Expand</string>
+    <string name="filebrowser_start">Filebrowser home</string>
+    <string name="files">Files</string>
+    <string name="final_proc">Processed</string>
+    <string name="fixed_info">Info fixed at top</string>
+    <string name="genres">Genres</string>
+    <string name="headset_launch_app_missing">This features requires the \'Headphone detector\' app to be installed.\nWould you like to open the Play Store to install the application?</string>
+    <string name="headset_launch_summary">Play when the headphones are plugged in. (Requires the \'Headphone detector\' app to be installed.)</string>
+    <string name="headset_launch_title">Play when plugged</string>
+    <string name="headset_only_summary">Prevents music from being played through the internal speakers.</string>
+    <string name="headset_only_title">External output only</string>
+    <string name="headset_pause_summary">Pause when the headphones are unplugged.</string>
+    <string name="headset_pause_title">Pause when unplugged</string>
+    <string name="hide_queue">Hide queue</string>
+    <string name="idle_timeout_title">Idle timeout</string>
+    <string name="ignore_audiofocus_loss_summary">Keep playing on permanent audio focus loss</string>
+    <string name="info_below_cover">Info below cover art</string>
+    <string name="info_on_cover">Info on cover art</string>
+    <string name="last_used_action">Last used action</string>
+    <string name="library_screen">Library screen</string>
+    <string name="media_button_beep_summary">Beep after skipping a track with a headset control double click.</string>
+    <string name="media_button_beep_title">Headset control beep</string>
+    <string name="media_button_summary">This is also required for ICS lockscreen controls.</string>
+    <string name="media_button_title">Headset/Bluetooth controls</string>
+    <string name="misc_features">Miscellaneous features</string>
+    <string name="more_from_album">More from album</string>
+    <string name="more_from_artist">More from artist</string>
+    <string name="name">Name</string>
+    <string name="never_show">Never show</string>
+    <string name="new_playlist">New playlist…</string>
+    <string name="next_album">Next album</string>
+    <string name="next_song">Next track</string>
+    <string name="no_receiving_apps">No receiving apps found for this media type!</string>
+    <string name="no_repeat">No repeat</string>
+    <string name="no_shuffle">No shuffle</string>
+    <string name="no_songs">No tracks found on your device.</string>
+    <string name="notification_action_title">Notification action</string>
+    <string name="notification_mode_title">Notification mode</string>
+    <string name="notification_nag">Very verbose notification</string>
+    <string name="notification_nag_summary">Announce track changes using a \'Heads-Up-Notification\'</string>
+    <string name="notifications">Notifications</string>
+    <string name="number_of_tracks">Number of tracks</string>
+    <string name="open">Open</string>
+    <string name="open_full_player">Open full player</string>
+    <string name="open_library">Open library</string>
+    <string name="open_main_activity">Open library (default)</string>
+    <string name="open_mini_popup">Open mini popup</string>
+    <string name="overwrite">Overwrite</string>
+    <string name="permission_request_summary">Vanilla Music needs read permission to display your music library</string>
+    <string name="play">Play</string>
+    <string name="play_all">Play all</string>
+    <string name="play_or_enqueue">Enqueue if playing; Play if paused</string>
+    <string name="play_pause">Play/Pause</string>
+    <string name="playback_on_startup_summary">Open playback view on startup</string>
+    <string name="playback_on_startup_title">Open on startup</string>
+    <string name="playback_screen">Playback screen</string>
+    <string name="playback_view">Now playing</string>
+    <string name="playlist_favorites">Favorites</string>
+    <string name="playlists">Playlists</string>
+    <string name="preferences_action_clear_queue">Clear queue</string>
+    <string name="preferences_action_enqueue_current_album">Enqueue album</string>
+    <string name="preferences_action_enqueue_current_artist">Enqueue artist</string>
+    <string name="preferences_action_enqueue_current_genre">Enqueue genre</string>
+    <string name="preferences_action_show_queue">Show queue</string>
+    <string name="previous_album">Previous album</string>
+    <string name="previous_song">Previous track</string>
+    <string name="progress_completed_label">Completed, ready to start another scan.</string>
+    <string name="progress_database_label">Querying database...</string>
+    <string name="progress_error_bad_path_label">Scan failed: bad path specified for new file search.</string>
+    <string name="progress_filelist_label">Preparing initial list of files...</string>
+    <string name="progress_unstarted_label">Not yet started.</string>
+    <string name="queue_cleared">Queue cleared.</string>
+    <string name="random">Random</string>
+    <string name="random_enabling">Random enabled</string>
+    <string name="readahead">Enable readahead</string>
+    <string name="readahead_summary">Readahead the currently playing track. This option may solve \'audio dropout\' issues. (caused by a slow SD card)</string>
+    <string name="remove">Remove</string>
+    <string name="remove_from_favorites">Remove from favorites</string>
+    <string name="rename">Rename</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_current_song">Repeat current track</string>
+    <string name="replaygain">ReplayGain</string>
+    <string name="replaygain_album_summary">Preserve album dynamics</string>
+    <string name="replaygain_album_title">Enable album ReplayGain</string>
+    <string name="replaygain_bump_title">ReplayGain pre-amp</string>
+    <string name="replaygain_preamp_note_content">Android does not allow Vanilla Music to raise the volume to >100%. Setting the Pre-amp to a high value may cause issues if you are listening to \'quiet\' music. \n\nRecommended values are:\n-> -3dB for silent/classical music\n-> +3dB for post-2000 recordings</string>
+    <string name="replaygain_preamp_note_title">Note</string>
+    <string name="replaygain_summary">Configure handling of ReplayGain information</string>
+    <string name="replaygain_track_summary">Play all tracks at equal loudness</string>
+    <string name="replaygain_track_title">Enable per-track ReplayGain</string>
+    <string name="replaygain_untagged_debump_summary">Decrease volume by</string>
+    <string name="replaygain_untagged_debump_title">Tracks without ReplayGain tag</string>
+    <string name="restore_default">Restore default</string>
+    <string name="reverse_sort">Reverse sort</string>
+    <string name="save_as_playlist">Save as playlist…</string>
+    <string name="scrobble_summary">Scrobble to Last.fm through ScrobbleDroid or Simple Last.fm Scrobbler</string>
+    <string name="scrobble_title">Use ScrobbleDroid API</string>
+    <string name="sdscan_help">Starting a rescan causes Vanilla Music to trigger a full rebuild of the media database.</string>
+    <string name="sdscanner">SD Scanner</string>
+    <string name="search">Search</string>
+    <string name="seek_10s_backward">Seek 10 seconds backward</string>
+    <string name="seek_10s_forward">Seek 10 seconds forward</string>
+    <string name="select">Select</string>
+    <string name="sendto">Send to…</string>
+    <string name="settings">Settings</string>
+    <string name="shake_action_title">Shake action</string>
+    <string name="shake_threshold_title">Shake force threshold</string>
+    <string name="share">Share…</string>
+    <string name="show_queue">Show queue</string>
+    <string name="show_when_playing">Show when playing (default)</string>
+    <string name="shuffle_albums">Shuffle albums</string>
+    <string name="shuffle_songs">Shuffle tracks</string>
+    <string name="shuffle_songs_continuously">Shuffle tracks continuously</string>
+    <string name="skip_to_next_song">Skip to next track</string>
+    <string name="skipping_folder_label">Encountered an error and skipping</string>
+    <string name="song_load_failed">Failed to load track %s. It may be corrupt or missing.</string>
+    <string name="song_playcount">Playcount</string>
+    <string name="songs">Tracks</string>
+    <string name="sort_by">Sort by</string>
+    <string name="stock_broadcast_summary">Send broadcasts emulating those sent by the stock music player to work with 3rd party lockscreen controls, widgets, etc.</string>
+    <string name="stock_broadcast_title">Emulate stock broadcasts</string>
+    <string name="stop_current_song">Stop after current track</string>
+    <string name="swipe_down_action_title">Swipe down action</string>
+    <string name="swipe_up_action_title">Swipe up action</string>
+    <string name="tabs">Tab order</string>
+    <string name="theme">Theme</string>
+    <string name="toggle_controls">Toggle controls</string>
+    <string name="unknown">Unknown</string>
+    <string name="use_idle_timeout_summary">When active, playback will be stopped after the given period of inactivity</string>
+    <string name="use_idle_timeout_title">Enable idle timeout</string>
+    <string name="volume_during_ducking_summary">Playback volume: </string>
+    <string name="volume_during_ducking_title">Volume during notification</string>
+    <string name="year">Year</string>
+    <style name="BackActionBar" parent="VanillaBase">
+		<item name="android:actionBarStyle">@style/Universal.PlaybackActionBar</item>
+	</style>
+    <style name="Library" parent="VanillaBase">
+		<item name="android:windowActionBar">false</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+    <style name="Playback" parent="VanillaBase">
+		<item name="android:actionBarStyle">@style/Universal.PlaybackActionBar</item>
+		<item name="android:windowBackground">@android:color/black</item>
+	</style>
+    <style name="PopupDialog" parent="android:Theme.Holo.Dialog.MinWidth"/>
+    <style name="Universal.PlaybackActionBar" parent="android:Widget.Holo.ActionBar">
+		<item name="android:displayOptions">showTitle|homeAsUp</item>
+	</style>
+    <style name="VanillaBase" parent="android:Theme.Holo">
+		<item name="overlay_background_color">#a000</item>
+		<!-- color to use in full_playback text, set to bright_foreground_disabled_holo_light //-->
+		<item name="overlay_foreground_color">#ffb2b2b2</item>
+		<item name="float_color">#f222</item>
+		<item name="tabs_background">#ff1e1e1e</item>
+		<item name="now_playing_marker">@android:color/holo_blue_dark</item>
+		<item name="controls_normal">#fff5f5f5</item>
+		<item name="controls_active">@android:color/holo_blue_dark</item>
+		<item name="android:scrollbarStyle">outsideInset</item>
+	</style>
+</resources>

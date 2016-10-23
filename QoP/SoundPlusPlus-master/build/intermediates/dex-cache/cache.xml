@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="4e40689ce10a3d26aa76e54079ae1752bb734c9a">
+        <dex dex="/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a0313d130fa78ba50db7256dff0fb388d8b4f994/classes.dex" />
+    </item>
+    <item
+        jar="/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="b954c2f57c7817733b030da4d59e07595198387e">
+        <dex dex="/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_08d85382271ef185c27da938515acf8054e2374f/classes.dex" />
+    </item>
+
+</items>

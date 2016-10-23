@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable/hidden_play.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable/hidden_play.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable/unbound_ripple_light.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable/unbound_ripple_light.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable/inset_divider.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable/inset_divider.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable/hidden_pause.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable/hidden_pause.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable/hidden_next.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable/hidden_next.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable/ic_menu_moreoverflow.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable/ic_menu_moreoverflow.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable/ic_menu_search.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable/ic_menu_search.xml"
+    }
+]

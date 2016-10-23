@@ -1,0 +1,349 @@
+[
+    {
+        "outputFile": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/values-nl/values-nl.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 70,
+                    "endOffset": 121
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 2,
+                        "startOffset": 340,
+                        "endColumn": 68,
+                        "endOffset": 406
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 126,
+                    "endColumn": 41,
+                    "endOffset": 163
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 2,
+                        "startOffset": 631,
+                        "endColumn": 39,
+                        "endOffset": 668
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 168,
+                    "endColumn": 45,
+                    "endOffset": 209
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 2,
+                        "startOffset": 587,
+                        "endColumn": 43,
+                        "endOffset": 628
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 214,
+                    "endColumn": 44,
+                    "endOffset": 254
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 2,
+                        "startOffset": 469,
+                        "endColumn": 42,
+                        "endOffset": 509
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 259,
+                    "endColumn": 38,
+                    "endOffset": 293
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 2,
+                        "startOffset": 550,
+                        "endColumn": 36,
+                        "endOffset": 584
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 298,
+                    "endColumn": 39,
+                    "endOffset": 333
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 2,
+                        "startOffset": 261,
+                        "endColumn": 37,
+                        "endOffset": 296
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 338,
+                    "endColumn": 43,
+                    "endOffset": 377
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 2,
+                        "startOffset": 671,
+                        "endColumn": 41,
+                        "endOffset": 710
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 382,
+                    "endColumn": 47,
+                    "endOffset": 425
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 2,
+                        "startOffset": 133,
+                        "endColumn": 45,
+                        "endOffset": 176
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 430,
+                    "endColumn": 37,
+                    "endOffset": 463
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 2,
+                        "startOffset": 839,
+                        "endColumn": 35,
+                        "endOffset": 872
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 468,
+                    "endColumn": 61,
+                    "endOffset": 525
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 2,
+                        "startOffset": 409,
+                        "endColumn": 59,
+                        "endOffset": 466
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 530,
+                    "endColumn": 37,
+                    "endOffset": 563
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 2,
+                        "startOffset": 713,
+                        "endColumn": 35,
+                        "endOffset": 746
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 568,
+                    "endColumn": 38,
+                    "endOffset": 602
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 2,
+                        "startOffset": 224,
+                        "endColumn": 36,
+                        "endOffset": 258
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 607,
+                    "endColumn": 48,
+                    "endOffset": 651
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 2,
+                        "startOffset": 792,
+                        "endColumn": 46,
+                        "endOffset": 836
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 656,
+                    "endColumn": 46,
+                    "endOffset": 698
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 2,
+                        "startOffset": 179,
+                        "endColumn": 44,
+                        "endOffset": 221
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 703,
+                    "endColumn": 42,
+                    "endOffset": 741
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 2,
+                        "startOffset": 299,
+                        "endColumn": 40,
+                        "endOffset": 337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 746,
+                    "endColumn": 39,
+                    "endOffset": 781
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 2,
+                        "startOffset": 512,
+                        "endColumn": 37,
+                        "endOffset": 547
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 786,
+                    "endColumn": 49,
+                    "endOffset": 831
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 2,
+                        "startOffset": 85,
+                        "endColumn": 47,
+                        "endOffset": 130
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 836,
+                    "endColumn": 44,
+                    "endOffset": 876
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-nl/translatable.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 2,
+                        "startOffset": 749,
+                        "endColumn": 42,
+                        "endOffset": 789
+                    }
+                }
+            }
+        ]
+    }
+]

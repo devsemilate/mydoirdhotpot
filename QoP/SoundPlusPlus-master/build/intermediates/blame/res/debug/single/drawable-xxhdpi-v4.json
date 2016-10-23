@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_menu_moreoverflow_normal_holo_dark.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/ic_menu_moreoverflow_normal_holo_dark.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/repeat_inactive_service.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/repeat_inactive_service.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/folder.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/folder.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/fallback_cover.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/fallback_cover.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/icon.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/icon.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_microphone.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/ic_microphone.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_musicnote.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/ic_musicnote.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/repeat_active.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/repeat_active.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/random_active.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/random_active.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/widget_play.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/widget_play.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_menu_search_holo.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/ic_menu_search_holo.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/previous.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/previous.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/repeat_inactive.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/repeat_inactive.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/notification_close.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/notification_close.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/btn_rating_star_off_mtrl_alpha.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/status_icon.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/status_icon.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/shuffle_album_active.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/shuffle_album_active.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/btn_rating_star_on_mtrl_alpha.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/notification_close_dark.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/notification_close_dark.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/shuffle_active.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/shuffle_active.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/shuffle_inactive.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/shuffle_inactive.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/stop_current_active.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/stop_current_active.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/widget_previous.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/widget_previous.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/play.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/play.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/repeat_current_active.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/repeat_current_active.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/pause.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/pause.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/widget_pause.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/widget_pause.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/arrow.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/arrow.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_menu_search_material.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/ic_menu_search_material.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/next.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/next.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/grabber.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/grabber.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_disk.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/ic_disk.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/shuffle_inactive_service.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/shuffle_inactive_service.png"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/widget_next.png",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/drawable-xxhdpi/widget_next.png"
+    }
+]

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="22"
+    density="420dpi"
+    format="7"
+    timestamp="92780317475715"
+    token="-9121076277362362933" >
+
+    <task
+        name="javac"
+        duration="21123" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="2392" />
+    <task
+        name="verifier"
+        duration="91" />
+
+    <artifact
+        location="/home/lamphan/Documents/source/SoundPlusPlus-master/build/outputs/apk/SoundPlusPlus-master-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="92780317475715" >
+        <artifact
+            location="/home/lamphan/Documents/source/SoundPlusPlus-master/build/outputs/apk/SoundPlusPlus-master-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

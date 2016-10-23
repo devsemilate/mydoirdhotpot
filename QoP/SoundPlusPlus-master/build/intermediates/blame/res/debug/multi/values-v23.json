@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/values-v23/values-v23.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 60,
+                    "endOffset": 111
+                },
+                "from": {
+                    "file": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/values-v23/colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 60,
+                        "endOffset": 111
+                    }
+                }
+            }
+        ]
+    }
+]

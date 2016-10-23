@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2012-2015 Adrian Ulrich <adrian@teamuit.ch>
+Copyright (C) 2012 Christopher Eby <kreed@kreed.org>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.teamuit.android.soundplusplus"
+    android:installLocation="auto"
+    android:versionCode="10440"
+    android:versionName="1.0.44" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- This is needed for isWiredHeadsetOn() to work in some cases. (bug?) -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="Sound++" >
+        <meta-data
+            android:name="com.mirrorlink.android.rockscout.allow-offline-access"
+            android:value="true" />
+
+        <activity
+            android:name="ch.teamuit.android.soundplusplus.FullPlaybackActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="ch.teamuit.android.soundplusplus.LibraryActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Library" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.APP_MUSIC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ch.teamuit.android.soundplusplus.PlaylistActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="ch.teamuit.android.soundplusplus.MiniPlaybackActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/PopupDialog" />
+
+        <receiver
+            android:name="ch.teamuit.android.soundplusplus.OneCellWidget"
+            android:label="Vanilla Music 1x1" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/one_cell_widget" />
+        </receiver>
+        <receiver
+            android:name="ch.teamuit.android.soundplusplus.FourLongWidget"
+            android:label="Vanilla Music 4x1 A" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/four_long_widget" />
+        </receiver>
+        <receiver
+            android:name="ch.teamuit.android.soundplusplus.FourWhiteWidget"
+            android:label="Vanilla Music 4x1 White" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/four_white_widget" />
+        </receiver>
+        <receiver
+            android:name="ch.teamuit.android.soundplusplus.WidgetE"
+            android:label="Vanilla Music 4x1 B" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_e" />
+        </receiver>
+        <receiver
+            android:name="ch.teamuit.android.soundplusplus.FourSquareWidget"
+            android:label="Vanilla Music 2x2 A" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/four_square_widget" />
+        </receiver>
+        <receiver
+            android:name="ch.teamuit.android.soundplusplus.WidgetD"
+            android:label="Vanilla Music 2x2 B" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_d" />
+        </receiver>
+        <receiver android:name="ch.teamuit.android.soundplusplus.MediaButtonReceiver" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="ch.teamuit.android.soundplusplus.PlaybackService" >
+            <intent-filter>
+                <action android:name="ch.blinkenlights.android.vanilla.action.PLAY" />
+                <action android:name="ch.blinkenlights.android.vanilla.action.PAUSE" />
+                <action android:name="ch.blinkenlights.android.vanilla.action.TOGGLE_PLAYBACK" />
+                <action android:name="ch.blinkenlights.android.vanilla.action.NEXT_SONG" />
+                <action android:name="ch.blinkenlights.android.vanilla.action.PREVIOUS_SONG" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="ch.teamuit.android.soundplusplus.MirrorLinkMediaBrowserService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="ch.teamuit.android.soundplusplus.PreferencesActivity" />
+        <activity android:name="ch.teamuit.android.soundplusplus.TabOrderActivity" />
+        <activity android:name="ch.teamuit.android.soundplusplus.FilebrowserStartActivity" />
+        <activity
+            android:name="ch.teamuit.android.soundplusplus.PermissionRequestActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="ch.teamuit.android.soundplusplus.AudioPickerActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:theme="@style/PopupDialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/x-flac" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="content" />
+                <data android:host="media" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/x-flac" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIEViwBxSHCdBCOOat4Go_5gSxFU7PhRFjLTeRAw" />
+    </application>
+
+</manifest>

@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/preference_playback.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/preference_playback.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/preference_library.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/preference_library.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/preference_coverart.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/preference_coverart.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/preference_headers.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/preference_headers.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/widget_e.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/widget_e.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/preference_notifications.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/preference_notifications.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/four_white_widget.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/four_white_widget.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/one_cell_widget.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/one_cell_widget.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/widget_d.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/widget_d.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/four_long_widget.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/four_long_widget.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/four_square_widget.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/four_square_widget.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/preference_misc.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/preference_misc.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/preference_audio.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/preference_audio.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/preference_shake.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/preference_shake.xml"
+    },
+    {
+        "merged": "/home/lamphan/Documents/source/SoundPlusPlus-master/build/intermediates/res/merged/debug/xml/preference_replaygain.xml",
+        "source": "/home/lamphan/Documents/source/SoundPlusPlus-master/res/xml/preference_replaygain.xml"
+    }
+]
